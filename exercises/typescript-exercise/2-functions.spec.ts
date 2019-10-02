@@ -9,6 +9,7 @@ describe('Functions: dnaCost', () => {
 	});
 
 	it('can be called with many arguments', () => {
+		assert.equal( dnaCost(2500), 2500);
 		assert.equal( dnaCost(2500, 'abc', 'de', 'f'), 2506);
 	});
 

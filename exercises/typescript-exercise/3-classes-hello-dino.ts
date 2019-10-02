@@ -4,6 +4,10 @@ class DinoKeeper {
   constructor(name:string) {
     this.name = name;
   }
+
+  sayHi() : string {
+    return `${this.name} says "hi"`
+  }
 }
 
 export default DinoKeeper;

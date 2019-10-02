@@ -1,8 +1,12 @@
 /* Use an ES6 Class to construct a Person instance.
  * */
-function Person(firstname, lastname) {
-  this.fname = firstname;
-  this.lname = lastname;
+
+class Person {
+
+  constructor(fname, lname) {
+    this.fname = fname;
+    this.lname = lname;
+  }
 }
 
 var john = new Person('John', 'Doe');

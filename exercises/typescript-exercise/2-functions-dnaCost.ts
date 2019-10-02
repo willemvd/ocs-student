@@ -1,3 +1,3 @@
-export function dnaCost(baseCost, sequence) {
-    return baseCost + sequence.length;
+export function dnaCost(baseCost: number, ...sequence: string[]) {
+    return baseCost + sequence.join('').length;
 }

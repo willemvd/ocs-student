@@ -2,15 +2,23 @@
  * preferred language. Use `super` to initialize the firstname and lastname.
  * */
 
-function Person(firstname, lastname) {
-  this.fname = firstname;
-  this.lname = lastname;
+
+class Person {
+
+  constructor(fname, lname) {
+    this.fname = fname;
+    this.lname = lname;
+  }
 }
 
-function Developer(firstname, lastname, preferredLanguage) {
-  Person.call(this, firstname, lastname);
-  this.preferredLanguage = preferredLanguage;
+
+class Developer extends Person {
+  constructor(fname, lname, preferredLanguage) {
+    super(fname, lname);
+    this.preferredLanguage = preferredLanguage;
+  }
 }
+
 
 var jen = new Developer('Jen', 'Maker', 'Javascript');
 
